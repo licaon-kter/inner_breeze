@@ -66815,10 +66815,10 @@ d.sCX(B.Hr)
 s=e.aP()
 s.sa6(0,B.e_)
 s.sdM(0,B.aw)
-s.sip(5)
+s.sip(8)
 r=B.f.c2(g,6e7)
-for(q=0;q<=r;++q){p=i-q*25
-o=36-q*2
+for(q=0;q<=r;++q){p=i-q*32
+o=25-q*4
 n=6.283185307179586/o
 for(m=0;m<o;++m){g=m*n
 a.dV(new A.i(l+p*Math.cos(g),k+p*Math.sin(g)),1,d)}if(q<r)a.jy(A.le(j,p),-1.5707963267948966,6.283185307179586,!1,s)
@@ -66870,10 +66870,13 @@ Zy(){$.t.cx$.push(new A.aeJ(this))},
 qH(){var s=this
 if(s.w<0)s.x=A.lw(A.bc(0,0,0,1),new A.aeU(s))
 else s.x=A.lw(new A.aG(B.f.aS(A.bc(0,2860-B.f.W(s.d*542),0,0).a*2)),new A.aeV(s))},
-G(a){var s,r=this,q=null,p=r.w<0?"Get Ready":"Round: 1"
-p=A.bn(p,q,q,A.bC(q,q,q,q,q,q,q,q,q,q,q,32,q,q,B.U,q,q,!0,q,q,q,q,q,q,q,q),q,q)
-s=r.d
-return A.no(q,A.eI(new A.bH(new A.aL(25,25,25,25),A.ei(A.a([p,new A.m3(r.f,s,B.f.k(r.w),q),A.b2(q,200,q),new A.qP(q)],t.p),B.Q,B.bf,B.a5),q),q,q),q)},
+G(a){var s,r,q,p,o=this,n=null,m=o.w<0?"Get Ready":"Round: 1"
+m=A.bn(m,n,n,A.bC(n,n,n,n,n,n,n,n,n,n,n,32,n,n,B.U,n,n,!0,n,n,n,n,n,n,n,n),n,n)
+s=o.d
+r=o.f
+q=o.w
+p=o.r
+return A.no(n,A.eI(new A.bH(new A.aL(25,25,25,25),A.ei(A.a([m,new A.m3(r,s,B.f.k(q>p?p:q),n),A.b2(n,200,n),new A.qP(n)],t.p),B.Q,B.bf,B.a5),n),n,n),n)},
 l(){var s=this.x
 if(s!=null)s.a9(0)
 this.aD()}}
@@ -66903,7 +66906,7 @@ $S:0}
 A.aeV.prototype={
 $1(a){var s=this.a
 s.ad(new A.aeS(s))
-if(s.w>=s.r){a.a9(0)
+if(s.w>=s.r+1){a.a9(0)
 s.Zy()}},
 $S:23}
 A.aeS.prototype={
