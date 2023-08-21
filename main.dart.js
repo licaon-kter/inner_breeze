@@ -66981,11 +66981,9 @@ $S:0}
 A.nF.prototype={
 aa(){return new A.PI(A.b4(0,0,0,1),B.i)}}
 A.PI.prototype={
-ap(){var s=this
-s.aJ()
-s.rK()
-if(s.d!==1)s.r=1
-s.qY()},
+ap(){this.aJ()
+this.rK()
+this.qY()},
 rK(){var s=0,r=A.I(t.H),q=this,p
 var $async$rK=A.J(function(a,b){if(a===1)return A.F(b,r)
 while(true)switch(s){case 0:p=A
@@ -67012,9 +67010,11 @@ A.af6.prototype={
 $0(){var s,r=this.a,q=this.b.a,p=J.ao(q),o=A.cC(p.h(q,"breaths"))
 r.f=o==null?30:o
 s=A.cC(p.h(q,"tempo"))
-if(s==null)s=3000
+if(s==null)s=1668
 o=A.cC(p.h(q,"rounds"))
-r.d=o==null?1:o
+if(o==null)o=1
+r.d=o
+if(o!==1)r.r=1
 r.x=A.b4(0,s,0,0)
 q=A.cC(p.h(q,"volume"))
 r.e=q==null?80:q},
@@ -67193,7 +67193,7 @@ a2L(a){this.ac(new A.abP(this,a))
 this.lW()}}
 A.abO.prototype={
 $0(){var s,r,q=this.b.a,p=J.ao(q),o=A.cC(p.h(q,"tempo"))
-if(o==null)o=3000
+if(o==null)o=1668
 s=this.a
 s.f=A.b4(0,o,0,0)
 r=A.cC(p.h(q,"breaths"))
