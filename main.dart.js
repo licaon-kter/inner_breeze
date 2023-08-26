@@ -66862,7 +66862,8 @@ qZ(){var s=this
 if(s.r<0)s.w=A.lx(A.b4(0,0,0,1),new A.abj(s))
 else s.w=A.lx(s.x,new A.abk(s))},
 G(a){var s=this,r=null,q=s.r,p=A.bg(q<0?"Get Ready":"Round: "+s.d,r,r,B.ba,r,r),o=s.x,n=s.e,m=s.f
-return A.lm(r,A.ej(new A.bG(new A.aL(25,25,25,25),A.dZ(A.a([p,new A.m4(n,o,B.f.k(q>m?m:q),new A.abg(s),r),A.b0(r,200,r),new A.qV(r)],t.p),B.O,B.bh,B.a1),r),r,r),r)},
+q=A.a([p,new A.m4(n,o,B.f.k(q>m?m:q),new A.abg(s),r),A.b0(r,200,r),new A.qV(r)],t.p)
+return A.lm(r,A.ej(new A.bG(new A.aL(25,25,25,25),A.dZ(q,B.O,B.bh,B.a1),r),r,r),r)},
 l(){var s=this.w
 if(s!=null)s.aa(0)
 this.aD()}}
@@ -66916,8 +66917,8 @@ l(){var s=this.e
 s===$&&A.b()
 s.aa(0)
 this.aD()},
-G(a){var s=null
-return A.lm(s,A.ej(new A.bG(new A.aL(25,25,25,25),A.dZ(A.a([A.b0(new A.p4(this.d,s),300,300),A.b0(s,50,s),A.b0(A.wy(A.bg("Stop Hold",s,s,A.dn(s,s,s,s,s,s,s,s,s,s,s,18,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),new A.abl(a),s),42,s),A.b0(s,20,s),new A.qV(s)],t.p),B.O,B.bh,B.a1),s),s,s),s)}}
+G(a){var s=null,r=A.a([A.b0(new A.p4(this.d,s),300,300),A.b0(s,50,s),A.b0(A.wy(A.bg("Stop Hold",s,s,A.dn(s,s,s,s,s,s,s,s,s,s,s,18,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s),new A.abl(a),s),42,s),A.b0(s,20,s),new A.qV(s)],t.p)
+return A.lm(s,A.ej(new A.bG(new A.aL(25,25,25,25),A.dZ(r,B.O,B.bh,B.a1),s),s,s),s)}}
 A.abn.prototype={
 $1(a){var s=this.a
 s.ag(new A.abm(s))},
@@ -66953,8 +66954,8 @@ $.t.cx$.push(new A.abp(q))
 return A.G(null,r)}})
 return A.H($async$t0,r)},
 qZ(){this.x=A.lx(A.b4(0,0,0,1),new A.abs(this))},
-G(a){var s=this,r=null
-return A.lm(r,A.ej(new A.bG(new A.aL(25,25,25,25),A.dZ(A.a([A.bg("Recovery",r,r,B.ba,r,r),new A.m4(s.d,s.r,s.w,new A.abq(s),r),A.b0(r,200,r),new A.qV(r)],t.p),B.O,B.bh,B.a1),r),r,r),r)},
+G(a){var s=this,r=null,q=A.a([A.bg("Recovery",r,r,B.ba,r,r),new A.m4(s.d,s.r,s.w,new A.abq(s),r),A.b0(r,200,r),new A.qV(r)],t.p)
+return A.lm(r,A.ej(new A.bG(new A.aL(25,25,25,25),A.dZ(q,B.O,B.bh,B.a1),r),r,r),r)},
 l(){var s=this.x
 if(s!=null)s.aa(0)
 this.aD()}}
@@ -67175,11 +67176,12 @@ case 2:q.ag(new p.aer(q,b))
 return A.G(null,r)}})
 return A.H($async$rN,r)},
 G(a){var s=null
-return A.lm(s,A.a5v(A.dZ(A.a([A.b0(s,20,s),A.ej(A.bg("Results",s,s,B.ba,s,s),s,s),A.b0(s,10,s),A.bg("Rounds Completed: "+this.d,s,s,B.vG,s,s)],t.p),B.O,B.an,B.a1),s),A.amn(A.b0(A.nJ(A.bg("Close",s,s,s,s,s),new A.aes(a),s),52,s),B.K))}}
+return A.lm(s,A.a5v(A.dZ(A.a([A.b0(s,20,s),A.ej(A.bg("Results",s,s,B.ba,s,s),s,s),A.b0(s,20,s),A.bg("Rounds Completed: "+this.d,s,s,B.vG,s,s)],t.p),B.O,B.an,B.a1),s),A.amn(A.b0(A.nJ(A.bg("Close",s,s,s,s,s),new A.aes(a),s),52,s),B.K))}}
 A.aer.prototype={
-$0(){var s=A.cr(J.aU(this.b.a,"rounds"))
-if(s==null)s=0
-this.a.d=s},
+$0(){var s=this.a,r=A.cr(J.aU(this.b.a,"rounds"))
+if(r==null)r=0
+s.d=r
+if(r>0)s.d=r-1},
 $S:0}
 A.aes.prototype={
 $0(){A.cI(this.a).cz(0,"/home",null)},
