@@ -71951,7 +71951,7 @@ A.ahc.prototype={
 $0(){},
 $S:0}
 A.ahf.prototype={
-$1(a){var s=null,r=a.gcs(a),q=a.gm(a),p=J.at(q),o=A.b8(""+A.r6(r)+"-"+A.a4t(r)+"-"+A.a4s(r)+" - "+p.gt(q)+" Sessions",s,s,s,s,s),n=t.p
+$1(a){var s=null,r=a.gcs(a),q=a.gm(a),p=J.at(q),o=A.b8(""+A.r6(r)+"-"+A.a4t(r)+"-"+A.a4s(r)+" - "+p.gt(q)+" Session(s)",s,s,s,s,s),n=t.p
 return A.cR(A.a([A.ar9(A.a([A.cR(p.fh(q,new A.ahe(),t.Pv).e4(0),B.z,B.P,B.J)],n),o)],n),B.z,B.P,B.J)},
 $S:473}
 A.ahe.prototype={
